@@ -1,0 +1,48 @@
+<html>
+<head>
+ <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
+		 
+	<script type="text/javascript" language="javascript">
+
+		 $(document).ready(function() {
+
+
+			$("#submit").click(function () {
+				var op = "name=" + $("#name").val()+ "&age=" + $("#age").val();
+				alert(op);
+			});
+		 
+
+			$("#reset").click(function () {
+				$("#name").val('');
+				$("#age").val('');
+			});
+		 
+    $("#alert").click(function () {
+	   var vb="hi";
+	
+		alert(vb);
+	});
+		});
+	</script>
+	<body>
+<table id="mytable" border="1">
+  <tr>
+            <td> NAME  </td>
+            <td> AGE   </td>
+            <td> BRANCH </td>
+			<td> DEPARTMENT  </td>
+            <td> LOCATION   </td>
+        </tr>
+		<tr>
+		  <td><input type="text" value="Vijay"  id="name"> </input>  </td>
+		  
+		  <td><input type="text" Value="50" id="age"> </input>  </td>
+		  <td><input type="text" id="bran"> </input>  </td>
+		  <td><input type="text" id="depart"> </input>  </td>
+		  <td><input type="text" id="loca"> </input>  </td>
+		  <input type="button" id="reset" label="reset" value="reset" onclick=function()/>
+			<input type="button" id="submit" label="Submit" value="submit" />
+			<input type="button" id="alert" label="alert" value="alert" />
+  </table>
+  </body>
